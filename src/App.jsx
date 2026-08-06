@@ -28,12 +28,12 @@ const App = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 px-4 py-4 md:px-6 lg:px-8">
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 px-4 py-4 md:px-6 lg:px-8">
             <Navbar />
 
             <main className="mt-6 grid gap-6 lg:grid-cols-3">
                 
-                <aside className="lg:sticky lg:top-4 lg:self-startw-full space-y-6 bg-white shadow-xl rounded-2xl p-6">
+                <aside className="lg:sticky lg:top-4 lg:self-start w-full space-y-6 bg-white dark:bg-slate-800 shadow-md rounded-2xl p-6">
                     <UploadBox onFileUpload={handleFileUpload} />
                     <FileInfo file={file} markdown={markdown} />
                     <CopyButton markdown={markdown} />

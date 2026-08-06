@@ -48,7 +48,7 @@ const UploadBox = ({ onFileUpload }) => {
   return (
     <div className={`rounded-2xl text-center border-2 border-dashed p-8 transition-all duration-200 ${isDragging
     ? "border-blue-500 bg-blue-50"
-    : "border-slate-200 bg-white"}
+    : "border-slate-200"}
    `}>
       <LuCloudUpload
         size={56}
@@ -59,7 +59,7 @@ const UploadBox = ({ onFileUpload }) => {
         Upload Markdown
       </h2>
 
-      <p className="text-sm text-slate-500 mt-2">
+      <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
         Drag & drop your <span className="font-medium">.md</span> file here
         <br />
         or choose one from your computer.
@@ -71,8 +71,8 @@ const UploadBox = ({ onFileUpload }) => {
            onDrop={handleDrop} 
           className="mt-6 flex flex-col items-center gap-4"
         >
-          <label className="group flex w-full max-w-md cursor-pointer flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50 px-5 py-8 text-sm text-slate-500 transition hover:border-blue-300 hover:bg-slate-100 focus-within:border-blue-300 focus-within:ring-2 focus-within:ring-blue-100">
-            <span className="mb-2 text-base font-medium text-slate-700">
+          <label className="group flex w-full max-w-md cursor-pointer flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50 dark:bg-slate-700 px-5 py-8 text-sm text-slate-500 dark:text-slate-400 transition hover:border-blue-300 hover:bg-slate-100 dark:hover:bg-slate-600 focus-within:border-blue-300 focus-within:ring-2 focus-within:ring-blue-100">
+            <span className="mb-2 text-base font-medium text-slate-400">
               Drop your file here...
             </span>
             <span className="text-xs text-slate-400">
@@ -94,7 +94,7 @@ const UploadBox = ({ onFileUpload }) => {
         </button>
       </div>
 
-      <p className="mt-4 text-xs text-slate-400">
+      <p className="mt-4 text-xs text-slate-400 dark:text-slate-500">
         Supports .md and .markdown files
       </p>
     </div>

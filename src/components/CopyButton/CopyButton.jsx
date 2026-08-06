@@ -19,7 +19,7 @@ const CopyButton = ({ markdown }) => {
     }
     return (
         <div className="w-full p-1">
-            <h3 className="text-lg font-semibold text-slate-800">
+            <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">
                 Actions
             </h3>
 

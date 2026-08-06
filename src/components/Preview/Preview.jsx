@@ -8,14 +8,14 @@ const Preview = ({ markdown }) => {
 
     if (!markdown) {
         return (
-            <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white p-8 text-center shadow-sm">
+            <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white dark:bg-slate-800 p-8 text-center shadow-sm">
                 <div className="mb-4 rounded-full bg-blue-100 p-4 text-blue-600">
                     <LuCloudUpload size={36} />
                 </div>
-                <h1 className="text-xl font-semibold text-slate-800">
+                <h1 className="text-xl font-semibold text-slate-800 dark:text-slate-200">
                     Upload a Markdown file
                 </h1>
-                <p className="mt-2 max-w-sm text-sm leading-6 text-slate-500">
+                <p className="mt-2 max-w-sm text-sm leading-6 text-slate-500 dark:text-slate-400">
                     Your rendered content will appear here once a .md or .markdown file is selected.
                 </p>
             </div>
