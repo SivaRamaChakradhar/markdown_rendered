@@ -46,7 +46,7 @@ const UploadBox = ({ onFileUpload }) => {
 
 
   return (
-    <div className={`rounded-2xl text-center border-2 border-dashed p-8 transition-all duration-200 ${isDragging
+    <div className={`rounded-2xl text-center border-2 border-dashed border-blue-500 p-8 transition-all duration-200 ${isDragging
     ? "border-blue-500 bg-blue-50"
     : "border-slate-200"}
    `}>
@@ -55,7 +55,7 @@ const UploadBox = ({ onFileUpload }) => {
         className="mx-auto text-blue-600 mb-4"
       />
 
-      <h2 className="text-xl font-semibold text-slate-800">
+      <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">
         Upload Markdown
       </h2>
 

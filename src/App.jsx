@@ -33,7 +33,7 @@ const App = () => {
 
             <main className="mt-6 grid gap-6 lg:grid-cols-3">
                 
-                <aside className="lg:sticky lg:top-4 lg:self-start w-full space-y-6 bg-white dark:bg-slate-800 shadow-md rounded-2xl p-6">
+                <aside className="lg:sticky lg:top-4 lg:self-start w-full max-h-[calc(100vh-2rem)] overflow-y-auto space-y-6 rounded-2xl bg-white p-6 shadow-md dark:bg-slate-800 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
                     <UploadBox onFileUpload={handleFileUpload} />
                     <FileInfo file={file} markdown={markdown} />
                     <CopyButton markdown={markdown} />

@@ -45,7 +45,7 @@ const FileInfo = ({ file, markdown }) => {
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                         Size
                     </p>
-                    <p className="font-medium">
+                    <p className="font-medium text-slate-800 dark:text-slate-200">
                         {fileSize}
                     </p>
                 </div>
@@ -53,7 +53,7 @@ const FileInfo = ({ file, markdown }) => {
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                         Lines
                     </p>
-                    <p className="font-medium">
+                    <p className="font-medium text-slate-800 dark:text-slate-200">
                         {lineCount}
                     </p>
                 </div>

@@ -23,12 +23,12 @@ const Preview = ({ markdown }) => {
     }
 
     return (
-        <div className="w-full space-y-6 bg-white shadow-xl rounded-2xl p-6 h-full scroll-overflow-y">
-            <div className="border-b border-slate-200 px-6 py-4">
-                <h2 className="text-lg font-semibold">Markdown Preview</h2>
+        <div className="w-full space-y-6 bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 h-full scroll-overflow-y">
+            <div className="border-b border-slate-200 dark:border-slate-600 px-6 py-4">
+                <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Markdown Preview</h2>
             </div>
 
-            <div className="prose max-w-none p-8 overflow-x-auto">
+            <div className="prose max-w-none p-8 overflow-x-auto text-slate-800 dark:prose-invert dark:text-slate-200">
                 <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     rehypePlugins={[rehypeHighlight]}

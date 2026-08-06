@@ -5,6 +5,7 @@ import { Toaster } from 'sonner'
 import { ThemeProvider } from './context/ThemeProvider.jsx'
 
 import "highlight.js/styles/github.css";
+import "highlight.js/styles/github-dark.css";
 
 import App from './App.jsx'
 
