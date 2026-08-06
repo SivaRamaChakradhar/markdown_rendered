@@ -1,8 +1,22 @@
 import { LuCopy } from "react-icons/lu";
+import { copyRenderedContent } from "../../utils/clipboard";
+
+import { toast } from "sonner";
 
 import { FaRegLightbulb } from "react-icons/fa6";
 
-const CopyButton = () => {
+const CopyButton = ({ markdown }) => {
+    const handleCopy = async () => {
+
+        try {
+        const copied = await copyRenderedContent(markdown);
+
+
+        toast.success(copied ? "Copied to clipboard!" : "Nothing to copy.")
+    } catch (err) {
+        console.error("HANDLE COPY ERROR:", err);
+    }
+    }
     return (
         <div className="w-full p-1">
             <h3 className="text-lg font-semibold text-slate-800">
@@ -11,6 +25,7 @@ const CopyButton = () => {
 
             <button
                 type="button"
+                onClick={handleCopy}
                 className="mt-4 w-full rounded-xl bg-blue-600 py-3 text-white font-medium transition hover:bg-blue-700 flex items-center justify-center gap-2"
             >
                 <LuCopy size={18} />
