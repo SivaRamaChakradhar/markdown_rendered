@@ -23,8 +23,8 @@ const Preview = ({ markdown }) => {
     }
 
     return (
-        <div className="w-full space-y-6 bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 h-full scroll-overflow-y">
-            <div className="border-b border-slate-200 dark:border-slate-600 px-6 py-4">
+        <div className="w-full space-y-6 rounded-2xl p-2 h-full overflow-y-auto">
+            <div className="border-b border-slate-200 dark:border-slate-600 bg-transparent px-6 py-4">
                 <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-200">Markdown Preview</h2>
             </div>
 
