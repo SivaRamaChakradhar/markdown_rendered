@@ -7,7 +7,7 @@ const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-       <nav className="mb-4 flex items-center justify-between rounded-2xl bg-white px-6 py-4 shadow-sm dark:bg-slate-800">
+       <nav className="bg-white dark:bg-slate-800 shadow-sm rounded-2xl px-6 py-4 mb-4 flex items-center justify-between">
 
             {/* Left */}
             <div className="flex items-center gap-3">
@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                    <h1 className="text-xl font-bold text-gray-800 text-slate-50">
                         Markdown Renderer
                     </h1>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                 onClick={toggleTheme}
                 type="button"
                 aria-label="Toggle theme"
-                className="rounded-lg bg-gray-100 dark:bg-slate-600 p-2 text-gray-600 dark:text-gray-300 transition hover:bg-gray-200 dark:hover:bg-slate-500"
+                className="rounded-lg bg-gray-100 dark:bg-slate-600 p-2 text-gray-600 dark:text-gray-200"
             >
                 {theme === "light" ? (
                     <MdDarkMode size={20} />
