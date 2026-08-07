@@ -28,19 +28,18 @@ const App = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 px-4 py-4 md:px-6 lg:px-8">
+        <div className="min-h-screen bg-slate-50 px-3 py-3 dark:bg-slate-950 sm:px-4 md:px-6 lg:px-8">
             <Navbar />
 
-            <main className="mt-6 grid gap-6 lg:grid-cols-3">
-                
-                <aside className="lg:sticky lg:top-4 lg:self-start w-full max-h-[calc(100vh-2rem)] overflow-y-auto space-y-6 rounded-2xl bg-white p-6 shadow-md dark:bg-slate-800 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+            <main className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-1 lg:mt-6 lg:grid-cols-3 lg:gap-6">
+                <aside className="w-full min-w-0 rounded-2xl bg-white p-4 shadow-md dark:bg-slate-800 space-y-4 sm:space-y-6 sm:p-6 lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
                     <UploadBox onFileUpload={handleFileUpload} />
                     <FileInfo file={file} markdown={markdown} />
                     <CopyButton markdown={markdown} />
                 </aside>
 
-                <section className="lg:col-span-2">
-                    {isLoading ? <Loader /> : <Preview markdown={markdown}/>}
+                <section className="w-full min-w-0 rounded-2xl bg-white p-4 shadow-md dark:bg-slate-800 sm:p-6 lg:col-span-2 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+                    {isLoading ? <Loader /> : <Preview markdown={markdown} />}
                 </section>
             </main>
         </div>
