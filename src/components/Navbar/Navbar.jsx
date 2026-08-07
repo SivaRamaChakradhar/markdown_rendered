@@ -19,11 +19,11 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-bold text-gray-800 text-slate-50">
+                    <h1 className="text-xl font-bold text-black-800 dark:text-slate-50">
                         Markdown Renderer
                     </h1>
 
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 dark:text-slate-400">
                         Upload, preview and copy Markdown
                     </p>
                 </div>
