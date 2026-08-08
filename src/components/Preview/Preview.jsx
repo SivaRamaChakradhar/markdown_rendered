@@ -8,7 +8,7 @@ const Preview = ({ markdown }) => {
 
     if (!markdown) {
         return (
-            <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl bg-white dark:bg-slate-800 p-8 text-center shadow-sm">
+            <div className="flex h-full w-full flex-col items-center justify-center p-8 text-center">
                 <div className="mb-4 rounded-full bg-blue-100 p-4 text-blue-600">
                     <LuCloudUpload size={36} />
                 </div>
